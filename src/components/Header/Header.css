@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #512B81;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  }
+  
+  .logo {
+    position: relative;
+    right: 600px;
+    top:-80px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    padding-bottom: 0%;
+    margin-bottom: 20;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  p {
+    transition: color 0.3s ease;
+  }
+  
+  .header:hover {
+    background-color:#4477CE;
+  }
+  
+  .header:hover h1 {
+    color: #ffd700;
+  }
+  
+  .header:hover p {
+    color: #FFD1E3;
+  }
+  
