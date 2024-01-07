@@ -1,18 +1,29 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
-import Header from './components/Header/Header'
+import "./App.css";
+import Header from "./components/Header/Header";
+import Tool from './components/Tools/Tools'
+import { CORE_TOOLS } from "./data";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div >
+    <div>
       <Header></Header>
-      <h1>Hello word</h1>
-    
+      <main>
+    <section id="core-tools">
+      <h2>Core Tools </h2>
+      <ul>
+        <Tool {...CORE_TOOLS[0]} />
+        <Tool {...CORE_TOOLS[1]} />
+        <Tool {...CORE_TOOLS[2]} />
+        <Tool {...CORE_TOOLS[3]} />
+      </ul>
+    </section>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
