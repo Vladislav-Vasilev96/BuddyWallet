@@ -28,7 +28,6 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <h1>Buddy Wallet</h1>
-       
       </div>
       <p>{description}</p>
     </header>
